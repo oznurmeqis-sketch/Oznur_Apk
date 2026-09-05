@@ -1060,3 +1060,89 @@ img{
   from{opacity:.82;filter:brightness(.92)}
   to{opacity:1;filter:brightness(1.18)}
 }
+
+
+/* ELENI SPLASH START */
+#eleni-splash {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+#eleni-splash.eleni-splash-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.eleni-splash-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.eleni-splash-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.12),
+            rgba(0, 0, 0, 0.48)
+        );
+}
+
+.eleni-splash-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.eleni-splash-icon {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    border-radius: 22px;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.65));
+}
+
+.eleni-splash-title {
+    color: #fff;
+    font-size: clamp(32px, 9vw, 58px);
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-shadow: 0 4px 24px rgba(0, 0, 0, 0.85);
+}
+
+.eleni-splash-loading {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+    letter-spacing: 0.08em;
+}
+
+@media (max-width: 600px) {
+    .eleni-splash-icon {
+        width: 82px;
+        height: 82px;
+        border-radius: 18px;
+    }
+}
+/* ELENI SPLASH END */
+

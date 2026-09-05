@@ -401,3 +401,29 @@ if ("serviceWorker" in navigator) {
     navigator.serviceWorker.register("/sw.js").catch(() => {});
   }, { once: true });
 }
+
+
+// ELENI SPLASH START
+(function () {
+    const splash = document.getElementById("eleni-splash");
+
+    if (!splash) {
+        return;
+    }
+
+    const hideSplash = () => {
+        splash.classList.add("eleni-splash-hidden");
+
+        window.setTimeout(() => {
+            splash.remove();
+        }, 700);
+    };
+
+    window.addEventListener("load", () => {
+        window.setTimeout(hideSplash, 2200);
+    });
+
+    window.setTimeout(hideSplash, 5000);
+})();
+// ELENI SPLASH END
+

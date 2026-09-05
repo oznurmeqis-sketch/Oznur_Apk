@@ -1,0 +1,16 @@
+ELENI AKSOY — V2 GELİŞTİRME NOTLARI
+
+1. Gerçek favicon.ico + 32x32 + Apple Touch Icon eklendi.
+2. Bilgi sayfasındaki hatalı/nested p-h3-h5 HTML yapısı semantik olarak düzeltildi.
+3. Tüm görseller WebP'ye dönüştürüldü; ağır PNG dosyaları kaldırıldı.
+4. Cache ayarları güncellendi; HTML anlık doğrulanır, görseller kontrollü önbelleğe alınır.
+5. Genel /* -> index.html yönlendirmesi kaldırıldı; yanlış dosya yolları artık gerçek 404 verir.
+6. Galeri 60 saniye sonunda dosyayı silmiş gibi davranmıyor; doğru biçimde “bu oturum için gizlendi” der ve görüntüyü DOM’dan kaldırır.
+7. Menü aria-expanded/aria-hidden, daha iyi focus ve geçişlerle geliştirildi.
+8. Ana görsel preload/fetchpriority, diğer görseller lazy loading + async decoding kullanır.
+9. SEO, canonical, Open Graph ve Twitter paylaşım metaları + og-cover.webp eklendi.
+10. PWA manifest + service worker eklendi. Kişisel/galeri görselleri offline cache’e özellikle alınmaz.
+11. Navigasyon ve iletişim tıklamalarında gizlilik-dostu istemci event kancaları eklendi (eleni:analytics CustomEvent). Netlify Web Analytics sayfa trafiğini sunucu tarafında ölçmeye devam eder.
+12. Klavye/focus görünürlüğü, Escape davranışı, reduced-motion ve ARIA etiketleri geliştirildi.
+
+Netlify: Bu klasörü olduğu gibi deploy edin. Web Analytics panelden ayrıca Enable Analytics ile açılır.

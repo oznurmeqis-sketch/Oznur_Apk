@@ -1,0 +1,9 @@
+Yapılan teknik düzeltmeler:
+- Site tasarımı ve içerik yapısı değiştirilmedi.
+- Dış bağlantılar yeni pencere yerine aynı tarayıcı sekmesinde açılacak şekilde target="_self" yapıldı.
+- Netlify için _redirects eklendi: tüm doğrudan URL girişleri index.html'e düşer.
+- netlify.toml içine aynı SPA fallback kuralı eklendi.
+
+Önemli:
+- HTTPS bağlantısının tarayıcı yerine WhatsApp/Telegram/X uygulamasında açılması Android/iOS uygulama-link ayarına bağlıdır; web sitesi bunu %100 zorlayamaz.
+- VPN gereksinimi Netlify alt alan adının ISS/DNS seviyesinde engellenmesinden kaynaklanıyorsa HTML/CSS/JS ile çözülemez. En kalıcı çözüm özel domain bağlamak ve DNS'i Cloudflare/benzeri güvenilir DNS üzerinden yönetmektir.

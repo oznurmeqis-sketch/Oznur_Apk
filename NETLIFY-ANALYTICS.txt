@@ -1,0 +1,19 @@
+ELENIAKSOY91.NETLIFY.APP — ZİYARETÇİ ANALİZİ
+
+Bu proje Netlify Web Analytics ile çalışmaya hazırdır. Netlify Web Analytics sunucu tarafında çalıştığı için index.html içine takip kodu eklemek gerekmez.
+
+Etkinleştirme:
+1. Netlify hesabına giriş yap.
+2. eleniaksoy91.netlify.app projesini aç.
+3. Logs & Metrics > Analytics bölümüne gir.
+4. Enable Analytics seçeneğine bas.
+5. Yeni ZIP'i deploy et.
+
+Analytics ekranında:
+- Unique visitors = yaklaşık farklı ziyaretçi sayısı
+- Pageviews = toplam sayfa görüntülenmesi
+- Top pages = en çok açılan sayfalar
+- Top locations = ziyaretçilerin yaklaşık ülkeleri/bölgeleri
+
+Önemli:
+Netlify Web Analytics verisi CDN/server loglarından gelir. Bu nedenle siteye görünür sayaç veya JavaScript takip kodu eklenmemiştir. Ziyaretçi sayısı herkese açık olmaz; Netlify panelinden yalnızca hesap sahibi görür.
